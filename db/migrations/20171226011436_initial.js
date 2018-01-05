@@ -33,26 +33,13 @@ exports.up = function(knex, Promise) {
         .references('spirits.id');
 
       table.timestamps(true, true);
-    }), // end of bottles table;
-
-    knex.schema.createTable('cocktail_favorites', function(table) {
-      table.increments('id').primary();
-      table.string('name');
-      table.json('directions');
-      table.json('ingredients');
-      table.string('imageURL');
-      table.string('spiritType');
-      table.integer('spirit_id');
-
-      table.timestamps(true, true);
-    })
+    }) // end of bottles table;
 
   ]); // end of Promise.all
 };
 
 exports.down = function(knex, Promise) {
   return Promise.all([
-    knex.schema.dropTable('cocktail_favorites'),
     knex.schema.dropTable('bottles'),
     knex.schema.dropTable('cocktails'),
     knex.schema.dropTable('spirits')
