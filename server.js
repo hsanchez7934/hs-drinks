@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.set('port', process.env.PORT || 3002);
-app.use(express.static(__dirname + '/drinks-frontend/build/index.html'));
+app.use(express.static('/drinks-frontend/build/index.html'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.locals.title = 'Drinks';
