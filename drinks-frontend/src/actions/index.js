@@ -7,5 +7,6 @@ export const fetchSpirits = () => dispatch => {
   fetch(`api/v1/spirits`)
     .then(response => response.json())
     .then(parsedResponse => dispatch(getSpirits(parsedResponse)))
+    //eslint-disable-next-line
     .catch(error => console.log(`Error has occured: ${error}`));
 };

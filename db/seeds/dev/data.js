@@ -60,5 +60,6 @@ exports.seed = function(knex, Promise) {
         createSpirit(knex, spirit));
       return Promise.all(spiritsArrayToResolve);
     })
+    //eslint-disable-next-line
     .catch(error => console.log(`Error seeding data: ${error}`));
 };

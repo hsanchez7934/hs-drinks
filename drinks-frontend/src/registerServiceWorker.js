@@ -25,6 +25,7 @@ export default function register() {
     if (publicUrl.origin !== window.location.origin) {
       // Our service worker won't work if PUBLIC_URL is on a different origin
       // from what our page is served on. This might happen if a CDN is used to
+      //eslint-disable-next-line
       // serve assets; see https://github.com/facebookincubator/create-react-app/issues/2374
       return;
     }
@@ -33,6 +34,7 @@ export default function register() {
       const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
 
       if (isLocalhost) {
+        //eslint-disable-next-line
         // This is running on localhost. Lets check if a service worker still exists or not.
         checkValidServiceWorker(swUrl);
       } else {
@@ -56,11 +58,13 @@ function registerValidSW(swUrl) {
               // the fresh content will have been added to the cache.
               // It's the perfect time to display a "New content is
               // available; please refresh." message in your web app.
+              //eslint-disable-next-line
               console.log('New content is available; please refresh.');
             } else {
               // At this point, everything has been precached.
               // It's the perfect time to display a
               // "Content is cached for offline use." message.
+              //eslint-disable-next-line
               console.log('Content is cached for offline use.');
             }
           }
@@ -68,6 +72,7 @@ function registerValidSW(swUrl) {
       };
     })
     .catch(error => {
+      //eslint-disable-next-line
       console.error('Error during service worker registration:', error);
     });
 }
@@ -93,6 +98,7 @@ function checkValidServiceWorker(swUrl) {
       }
     })
     .catch(() => {
+      //eslint-disable-next-line
       console.log(
         'No internet connection found. App is running in offline mode.'
       );
