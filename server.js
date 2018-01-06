@@ -31,7 +31,9 @@ app.get('/api', function (req, res) {
 
 
 app.get('*', function(request, response) {
-  response.sendFile(path.resolve(__dirname, './drinks-frontend/build', 'index.html'));
+  response.sendFile(
+    path.resolve(__dirname, './drinks-frontend/build', 'index.html')
+  );
 });
 
 // GET REQUEST FOR ALL SPIRITS, COCKTAILS, AND BOTTLES - BEGIN
@@ -56,7 +58,7 @@ app.get('/api/v1/bottles', (request, response) => {
 
 //GET REQUEST FOR SPIRITS, COCKTAILS, AND BOTTLES BY ID - BEGIN
 app.get('/api/v1/cocktails/:id', (request, response) => {
-  const { id } = request.params;
+  const id  = request.params.id;
 
   database('cocktails').where({ id }).select()
     .then(cocktail =>
@@ -70,7 +72,7 @@ app.get('/api/v1/cocktails/:id', (request, response) => {
 });
 
 app.get('/api/v1/spirits/:id', (request, response) => {
-  const { id } = request.params;
+  const id = request.params.id;
 
   database('spirits').where({ id }).select()
     .then(spirit =>
@@ -84,7 +86,7 @@ app.get('/api/v1/spirits/:id', (request, response) => {
 });
 
 app.get('/api/v1/bottles/:id', (request, response) => {
-  const { id } = request.params;
+  const id = request.params.id;
 
   database('bottles').where({ id }).select()
     .then(bottle =>
@@ -133,7 +135,7 @@ app.get('/api/v1/favorites', (request, response) => {
 });
 
 app.get('/api/v1/favorites/:id', (request, response) => {
-  const { id } = request.params;
+  const id = request.params.id;
 
   database('cocktail_favorites').where({ id }).select()
     .then(favorite =>
@@ -169,7 +171,7 @@ app.post('/api/v1/favorites', (request, response) => {
 });
 
 app.delete('/api/v1/favorites/:id', (request, response) => {
-  const { id } = request.params;
+  const id = request.params.id;
 
   database('cocktail_favorites').where({ id }).del()
     .then(favorite =>
