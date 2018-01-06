@@ -8,7 +8,8 @@
     "start": "concurrently \"npm run server\" \"cd drinks-frontend && npm start\"",
     "server": "nodemon server.js",
     "client": "node start-client.js",
-    "lint": "./node_modules/.bin/eslint ./"
+    "lint": "./node_modules/.bin/eslint ./",
+    "build": "cd drinks-frontend && npm run build"
   },
   "author": "",
   "license": "ISC",
