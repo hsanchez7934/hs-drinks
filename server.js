@@ -5,6 +5,7 @@ const fs = require('fs');
 const environment = process.env.NODE_ENV || 'development';
 const configuration = require('./knexfile')[environment];
 const database = require('knex')(configuration);
+const path = require('path');
 
 const requireHTTPS = (request, response, next) => {
   if (request.header('x-forwarded-proto') !== 'https') {
@@ -18,10 +19,20 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.set('port', process.env.PORT || 3002);
-app.use(express.static('/drinks-frontend/build/'));
+app.use(express.static(path.resolve(__dirname, './drinks-frontend/build'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.locals.title = 'Drinks';
+
+app.get('/api', function (req, res) {
+  res.set('Content-Type', 'application/json');
+  res.send('{"message":"Hello from the custom server!"}');
+});
+
+
+app.get('*', function(request, response) {
+  response.sendFile(path.resolve(__dirname, './drinks-frontend/build', 'index.html'));
+});
 
 // GET REQUEST FOR ALL SPIRITS, COCKTAILS, AND BOTTLES - BEGIN
 app.get('/api/v1/spirits', (request, response) => {
