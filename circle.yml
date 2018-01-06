@@ -14,4 +14,4 @@ deployment:
   production:
     branch: master
     heroku:
-      appname: hs-drinks-1-5-218
+      appname: hs-drinks-1-5-18
