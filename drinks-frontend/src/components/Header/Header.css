@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700);
+.header-container {
+  background-color: #8b0000;
+  height: 20%;
+  padding: 20px 0px;
+  font-family: "Quicksand", sans-serif; }
+
+.header-title {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  color: #F7F7F5;
+  border-bottom: 1px solid #80888B;
+  height: 30%;
+  font-size: 3em;
+  font-weight: 300;
+  padding-bottom: 0px; }
+
+.header-description {
+  height: 70%;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  color: #F7F7F5;
+  font-size: 1.5em;
+  font-weight: 300;
+  padding-top: 20px; }

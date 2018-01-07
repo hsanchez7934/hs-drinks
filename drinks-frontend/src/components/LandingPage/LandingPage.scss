@@ -1,0 +1,108 @@
+@import "../../styles/colors.scss";
+@import "../../styles/crimsonfont.scss";
+@import "../../styles/quicksandfont.scss";
+
+
+#landingpage-container {
+  height: 100%;
+  width: 100%;
+  background-color: $color4;
+}
+
+#landingpage-hero {
+  height: 88%;
+  background-image: url(../../assets/landingpage-hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#app-intro {
+  border: 2px solid $color4;
+  width: 80%;
+  height: 80%;
+  opacity: 0.5;
+  font-family: $quicksand;
+  color: $color4;
+  padding-top: 50px;
+}
+
+#welcome-title {
+  text-align: center;
+  width: 50%;
+  height: 10%;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 4em;
+  border-bottom: 1px solid $color3;
+}
+
+#intro-description {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 70px;
+}
+
+#get-started-button-container {
+  width: 50%;
+  height: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#get-started-button {
+  height: 80px;
+  width: 400px;
+  font-size: 2em;
+  background-color: $color6;
+  color: $color4;
+  font-weight: 300;
+}
+
+#get-started-button:hover {
+  cursor: pointer;
+  background-color: $color4;
+  color: $color6;
+}
+
+#app-title {
+  font-size: 7em;
+  color: $color6;
+  margin: 0;
+  text-align: center;
+  height: 90px;
+  font-weight: lighter;
+  font-family: $crimson;
+}
+
+#dr {
+  position: relative;
+  left: 15px;
+}
+
+#nks {
+  position: relative;
+  right: 14px;
+}
+
+#cocktail-icon {
+  height: 90px;
+  width: 90px;
+  position: relative;
+  top: 2px;
+}
+
+.drinks-header {
+  background-color: inherit;
+  height: 12%;
+}

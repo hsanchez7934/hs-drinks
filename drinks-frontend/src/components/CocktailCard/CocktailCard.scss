@@ -1,0 +1,83 @@
+@import "../../styles/colors.scss";
+@import "../../styles/crimsonfont.scss";
+@import "../../styles/quicksandfont.scss";
+
+.cocktail-card {
+  height: 900px;
+  width: 90%;
+  background-color: $color4;
+  margin: 0px auto 90px;;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid $color2;
+  font-family: $quicksand;
+}
+
+.cocktail-image {
+height: 100%;
+width: 30%;
+}
+
+.cocktail-info {
+  height: 100%;
+  width: 70%;
+}
+
+.cocktail-name {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  height: 15%;
+  font-size: 2.2em;
+  font-weight: 300;
+  color: $color1;
+  padding-top: 40px;
+}
+
+.cocktail-directions {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  height: 50%;
+  font-weight: 300;
+  font-size: 1.3em;
+  color: $color1;
+  padding-top: 20px;
+}
+
+.ingredients-container {
+  height: 25%;
+  width: 90%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.ingredient {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.favorite-button-container{
+  width: 90%;
+  height: 10%;
+  margin: 0 auto;
+}
+
+.favorite-button {
+  display: block;
+  height: 80px;
+  width: 400px;
+  margin: 0px auto 30px;
+  background-color: $color6;
+  color: $color4;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.favorite-button:hover {
+  background-color: $color3;
+  color: $color6;
+  cursor: pointer;
+}

@@ -4,7 +4,9 @@ const bottlesArrayData = require('../../../drinksData/bottles.js');
 
 const createSpirit = (knex, spirit) => {
   return knex('spirits').insert({
-    name: spirit.spirit
+    name: spirit.spirit,
+    description: spirit.description,
+    imageURL: spirit.imageURL
   }, 'id')
     .then(spiritID => {
       let cocktailsArray = [];

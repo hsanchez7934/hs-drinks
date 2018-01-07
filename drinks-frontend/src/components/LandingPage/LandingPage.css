@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700);
+#landingpage-container {
+  height: 100%;
+  width: 100%;
+  background-color: #F7F7F5; }
+
+#landingpage-hero {
+  height: 88%;
+  background-image: url(../../assets/landingpage-hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+#app-intro {
+  border: 2px solid #F7F7F5;
+  width: 80%;
+  height: 80%;
+  opacity: 0.5;
+  font-family: "Quicksand", sans-serif;
+  color: #F7F7F5;
+  padding-top: 50px; }
+
+#welcome-title {
+  text-align: center;
+  width: 50%;
+  height: 10%;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 4em;
+  border-bottom: 1px solid #80888B; }
+
+#intro-description {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 70px; }
+
+#get-started-button-container {
+  width: 50%;
+  height: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#get-started-button {
+  height: 80px;
+  width: 400px;
+  font-size: 2em;
+  background-color: #8b0000;
+  color: #F7F7F5;
+  font-weight: 300; }
+
+#get-started-button:hover {
+  cursor: pointer;
+  background-color: #F7F7F5;
+  color: #8b0000; }
+
+#app-title {
+  font-size: 7em;
+  color: #8b0000;
+  margin: 0;
+  text-align: center;
+  height: 90px;
+  font-weight: lighter;
+  font-family: "Crimson Text", serif; }
+
+#dr {
+  position: relative;
+  left: 15px; }
+
+#nks {
+  position: relative;
+  right: 14px; }
+
+#cocktail-icon {
+  height: 90px;
+  width: 90px;
+  position: relative;
+  top: 2px; }
+
+.drinks-header {
+  background-color: inherit;
+  height: 12%; }
