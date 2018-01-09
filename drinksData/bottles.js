@@ -162,6 +162,55 @@ module.exports = [
     spiritType: 'BRANDY',
     description: 'In 1889 Francis Korbel proudly oversaw the construction of his first still; built inside a brick tower which still stands today as part of the historic Korbel Champagne Cellars in Sonoma County, California. Korbel 12 celebrates Francis’ legacy with a rare limited production California brandy. This handcrafted brandy was distilled in a copper lined still similar to the one used by Francis in 1889. Aged for at least 12 years in fine hand built Appalachian oak barrels, Korbel 12 offers brandy lovers the ultimate in smoothness, richness and concentrated brandy flavor.'
   },
+
+  {
+    imageURL: '/static/media/hine-vintage-cognac.b57b8b3d.jpg',
+    name: 'HINE VINTAGE COGNAC',
+    spiritType: 'COGNAC',
+    description: 'Located in the heart of the Grande Champagne, the premium wine growing area of the Cognac region, the house of Hine produces one of the most exquisite cognacs since six generations. The estate boasts an exceptional 173 acres of vineyards. The house has a very special tradition of producing relatively small quantities but with a very high standard in quality. One of their trademarks is to store their vintage casks in cellars in Bristol, England. This way, the cognac goes through a uniquely different ageing process due to the humidity of the seaside town. These highly priced vintage bottles are called “Hine Early-Landed Vintage Cognac”.'
+  },
+  {
+    imageURL: '/static/media/ansac-xo-cognac.8926ed0e.jpg',
+    name: 'ANSAC COGNAC',
+    spiritType: 'COGNAC',
+    description: 'All Cognac is brandy, but not all brandies are Cognac. Cognac is a brandy distilled from wines made of grapes grown within the legal limits of the Charente and Charente-Maritime regions of France. Ansac is made from grapes grown in the Petite Champagne region, one of the Charente’s premier growing areas. Backed by an impeccable tradition of quality and a superior taste from Unicognac, one of the leading producers of Cognac sold in France, according to recent French BNIC statistics (Bureau National Interprofessional du Cognac), Ansac Cognac is a smooth, full-bodied drink worth savoring." -Heaven Hill Distilleries'
+  },
+  {
+    imageURL: '/static/media/ej-brandy.a3e39bb3.jpg',
+    name: 'E & J',
+    spiritType: 'COGNAC',
+    description: 'It all starts with the grape. The best ingredients found (French Colombard, Grenache, Barbera, Pinot Grigio and Muscat, to name a few) at the ideal ripeness for making brandy. Great brandy can only be made from great wine. The fermentation process is designed to produce quality wine that\'s perfect for crafting brandy.  It\'s then distilled for 45 days in order to keep the aromas and complex flavors of each grape used.'
+  },
+  {
+    imageURL: '/static/media/van-ryn-brandy.2adbaa99.jpg',
+    name: 'VAN RYN\'S',
+    spiritType: 'COGNAC',
+    description: 'The Van Ryn’s Brandy Distillery lies in the heart of the Vlottenburg Valley, where the Eerste River winds its way through the tranquil landscape. Producing award winning brandies from Colombard and Chenin Blanc grape varieties. Believing in “Excellence in Maturation” much care is afforded to maintain optimum maturation conditions in the cellar. The founder\'s belief that the secret of a great brandy lies in its maturation, remains the cornerstone of the distillery\'s brandy making tradition. At Van Ryn\'s Distillery, the age-old skill of the cooper has been preserved for posterity and still forms an integral part of brandy maturation in wood. The Distillery boasts an impressive variety of ancient stills - one of which dates back almost 200 years - and is still in daily use. It is a living testament to the art of brandy making and the South African brandy culture.'
+  },
+  {
+    imageURL: '/static/media/maison-gautier.8c951aa5.png',
+    name: 'MAISON GAUTIER COGNAC',
+    spiritType: 'COGNAC',
+    description: 'Truly generous and round Cognac, crafted following Gautier’s ancient know-how, since 1755. Crafted in small series by a small team of 15 passionate people. Twice elected as world’s Best Cognac in 2015.'
+  },
+  {
+    imageURL: '/static/media/cardenal-mendoza.530eb399.jpg',
+    name: 'CARDENAL MENDOZA',
+    spiritType: 'COGNAC',
+    description: 'Cardenal Mendoza is distilled from mostly Airen grapes. The solera this is aged in is made up of barrels that previously held Pedro Ximenez sherry, a dessert-style fortified wine. The average age of the solera is 15 years. '
+  },
+  {
+    imageURL: '/static/media/landy-brandy.fcfcc2b0.jpg',
+    name: 'LANDY',
+    spiritType: 'COGNAC',
+    description: 'Cognac Landy is part of the larger company Cognac Ferrand. This relatively new house, which was established in 1989, was a collaboration between Alexandre Gabriel and a traditional wine growing family in the Charente. Thus, Cognac Ferrand, and therefore Cognac Landy too, was created with the philosophy of bringing new life back into the industry and production of cognac. Because of this, Cognac Landy is produced in the age old fashion without utilizing mass production techniques.'
+  },
+  {
+    imageURL: '/static/media/korbel.7610ad54.jpg',
+    name: 'KORBEL BRANDY',
+    spiritType: 'COGNAC',
+    description: 'In 1889 Francis Korbel proudly oversaw the construction of his first still; built inside a brick tower which still stands today as part of the historic Korbel Champagne Cellars in Sonoma County, California. Korbel 12 celebrates Francis’ legacy with a rare limited production California brandy. This handcrafted brandy was distilled in a copper lined still similar to the one used by Francis in 1889. Aged for at least 12 years in fine hand built Appalachian oak barrels, Korbel 12 offers brandy lovers the ultimate in smoothness, richness and concentrated brandy flavor.'
+  },
   {
     imageURL: '/static/media/pitu.5c3281d6.jpg',
     name: 'PITU CACHACA',

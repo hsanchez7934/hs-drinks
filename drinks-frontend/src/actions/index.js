@@ -13,6 +13,71 @@ export const getBottles = bottlesArray => ({
   bottlesArray
 });
 
+export const getBottle = bottle => ({
+  type: 'GET_BOTTLE',
+  bottle
+});
+
+export const getSpirit = spirit => ({
+  type: 'GET_SPIRIT',
+  spirit
+});
+
+export const getCocktail = cocktail => ({
+  type: 'GET_COCKTAIL',
+  cocktail
+});
+
+export const getCocktailsBySpirit = cocktailsBySpiritArray => ({
+  type: 'GET_COCKTAILS_BY_SPIRIT',
+  cocktailsBySpiritArray
+});
+
+export const getBottlesBySpirit = bottlesBySpiritArray => ({
+  type: 'GET_BOTTLES_BY_SPIRIT',
+  bottlesBySpiritArray
+});
+
+export const fetchCocktailsBySpirit = (spiritID) => dispatch => {
+  fetch(`api/v1/spirits/${spiritID}/cocktails`)
+    .then(response => response.json())
+    .then(parsedResponse => dispatch(getCocktailsBySpirit(parsedResponse)))
+    //eslint-disable-next-line
+    .catch(error => console.log(`Error has occured: ${error}`));
+};
+
+export const fetchBottlesBySpirit = (spiritID) => dispatch => {
+  fetch(`api/v1/spirits/${spiritID}/bottles`)
+    .then(response => response.json())
+    .then(parsedResponse => dispatch(getBottlesBySpirit(parsedResponse)))
+    //eslint-disable-next-line
+    .catch(error => console.log(`Error has occured: ${error}`));
+};
+
+export const fetchBottle = (id) => dispatch => {
+  fetch(`api/v1/bottles/${id}`)
+    .then(response => response.json())
+    .then(parsedResponse => dispatch(getBottle(parsedResponse[0])))
+    //eslint-disable-next-line
+    .catch(error => console.log(`Error has occured: ${error}`));
+};
+
+export const fetchSpirit = (id) => dispatch => {
+  fetch(`api/v1/spirits/${id}`)
+    .then(response => response.json())
+    .then(parsedResponse => dispatch(getSpirit(parsedResponse[0])))
+    //eslint-disable-next-line
+    .catch(error => console.log(`Error has occured: ${error}`));
+};
+
+export const fetchCocktail = (id) => dispatch => {
+  fetch(`api/v1/cocktails/${id}`)
+    .then(response => response.json())
+    .then(parsedResponse => dispatch(getCocktail(parsedResponse[0])))
+    //eslint-disable-next-line
+    .catch(error => console.log(`Error has occured: ${error}`));
+};
+
 export const fetchBottles = () => dispatch => {
   fetch(`api/v1/bottles`)
     .then(response => response.json())
@@ -20,7 +85,6 @@ export const fetchBottles = () => dispatch => {
     //eslint-disable-next-line
     .catch(error => console.log(`Error has occured: ${error}`));
 };
-
 
 export const fetchCocktails = () => dispatch => {
   fetch(`api/v1/cocktails`)
