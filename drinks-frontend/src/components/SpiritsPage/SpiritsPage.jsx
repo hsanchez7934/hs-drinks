@@ -16,7 +16,8 @@ class SpiritsPage extends Component {
       description: `These are some of the most popular spirits
       in the world today. With a huge number to
       choose from, it is hard to figure out what to drink.
-      Let us help you find your new favorite today.`
+      Let us help you find your new favorite today.`,
+      condition: null
     };
   }
 
@@ -28,10 +29,16 @@ class SpiritsPage extends Component {
 
   cocktailsButtonOnClick = (id) => {
     this.props.fetchCocktailsBySpirit(id);
+    this.setState({
+      condition: false
+    });
   };
 
   bottlesButtonOnClick = (id) => {
     this.props.fetchBottlesBySpirit(id);
+    this.setState({
+      condition: false
+    });
   };
 
   createCocktailsBySpiritCards = () => {
@@ -50,6 +57,12 @@ class SpiritsPage extends Component {
     );
   };
 
+  backButtonOnClick = () => {
+    this.setState({
+      condition: true
+    });
+  }
+
   createSpiritCard = () => {
     const { spirits } = this.props;
     return spirits.map( (spirit, index) =>
@@ -63,23 +76,35 @@ class SpiritsPage extends Component {
 
   render() {
     console.log(this.props);
-    const { title, description } = this.state;
-    if (this.props.cocktailsBySpirit.length) {
+    const { title, description, condition } = this.state;
+    if (this.props.cocktailsBySpirit.length && !condition) {
       return (
         <section id='spiritspage-container'>
           <Header title={'COCKTAILS'} description={this.props.cocktailsBySpirit[0].spiritType} />
           <section id='spirits-container'>
+            <div className='backButton-container'>
+              <button
+                className='backButton'
+                onClick={() => this.backButtonOnClick()}></button>
+            </div>
             {
               this.createCocktailsBySpiritCards()
             }
           </section>
         </section>
       );
-    } else if (this.props.bottlesBySpirit.length) {
+    } else if (this.props.bottlesBySpirit.length && !condition) {
       return (
         <section id='spiritspage-container'>
+
+
           <Header title={'BOTTLES'} description={this.props.bottlesBySpirit[0].spiritType} />
           <section id='spirits-container'>
+            <div className='backButton-container'>
+              <button
+                className='backButton'
+                onClick={() => this.backButtonOnClick()}></button>
+            </div>
             {
               this.createBottlesBySpiritCards()
             }

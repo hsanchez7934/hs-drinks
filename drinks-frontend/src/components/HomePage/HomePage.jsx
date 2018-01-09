@@ -26,9 +26,9 @@ class HomePage extends Component {
   }
 
   renderHomeData = () => {
-    this.props.fetchCocktail(2548);
-    this.props.fetchBottle(1776);
-    this.props.fetchSpirit(326);
+    this.props.fetchCocktail(2875);
+    this.props.fetchBottle(1948);
+    this.props.fetchSpirit(358);
   }
 
   render() {

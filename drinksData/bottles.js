@@ -213,26 +213,26 @@ module.exports = [
   },
   {
     imageURL: '/static/media/pitu.5c3281d6.jpg',
-    name: 'PITU CACHACA',
-    spiritType: 'CACHACA',
+    name: 'PITU CACHAÇA',
+    spiritType: 'CACHAÇA',
     description: 'Cachaca pitu is a national drink in Brasil. It is the basis of the Caipirinha, one of the most popular cocktails of the end of the millennium. It is a sugar cane distillate, which is similar to white rum. However, it is not made of molasses but of sugar cane. That is why the taste of Cachaca is lighter and smoother than that of many types of rum, making it an ideal base for cocktails.'
   },
   {
     imageURL: '/static/media/avua.14124a8b.jpg',
-    name: 'AVUA CACHACA',
-    spiritType: 'CACHACA',
+    name: 'AVUA CACHAÇA',
+    spiritType: 'CACHAÇA',
     description: 'Made by one of Brazil’s only female distillers, Avuá is produced organically and using renewable energy sources. Avuá Cachaça Amburana is aged for up to two years in casks made from Amburana cearensis, a tree native to South America. Avuá Prata Cachaça is rested in stainless steel casks before being hand bottled.  The result is a LUSH and CRISP spirit with subtle floral notes perfect for exciting new cocktails, or the O\'Clássico Caipirinha. '
   },
   {
     imageURL: '/static/media/leblon.2e1420b0.jpg',
-    name: 'LEBLON CACHACA',
-    spiritType: 'CACHACA',
+    name: 'LEBLON CACHAÇA',
+    spiritType: 'CACHAÇA',
     description: 'The spirit is produced in an alambique copper pot still, triple filtered and then rested in 400-liter cognac casks for up to six months before bottling. The cachaça is made from freshly cut and pressed Brazilian sugar cane, which is grown at an altitude of 1,000 meters.'
   },
   {
     imageURL: '/static/media/inox.bd9fe9d2.png',
-    name: 'INOX ORIGINAL CACHACA',
-    spiritType: 'CACHACA',
+    name: 'INOX ORIGINAL CACHAÇA',
+    spiritType: 'CACHAÇA',
     description: 'INOX Double-Distilled Cachaça is made from Brazil’s finest sugarcanes. Resulting from extensive research into the unique qualities of premium spirits, the founders’ objective was to create a premium Brazilian cachaça (rum) worthy of inclusion in the same class with renowned, premium quality spirits. 91 pts – Wine Enthusiast 2013 “The bold, fruity scent and lingering finish evoke berries and bananas, although this clear spirit is otherwise relatively neutral and smooth. Recommended for mixing into tropical cocktails. San Francisco World Spirits Competition 2013 & 2010 Double Gold Medal. Chairman’s Trophy – 90 pts “Excellent, Highly Recommended”, Ultimate Spirits Challenge 2012, Gold Medal – 92 pts “Exceptional” Beverage Testing Institute 2011'
   },
   {

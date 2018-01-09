@@ -11,3 +11,78 @@
   overflow: scroll;
   padding-top: 50px;
   padding-bottom: 50px; }
+
+.backButton-container {
+  width: 100%;
+  position: fixed;
+  height: 100px; }
+
+.backButton {
+  background-image: url(../../assets/back.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 160px;
+  width: 200px;
+  background-color: inherit;
+  border-width: 0px;
+  position: relative;
+  left: 50px;
+  -webkit-box-shadow: inset 0px 0px 124px -5px #80888b;
+  -moz-box-shadow: inset 0px 0px 124px -5px #80888b;
+  box-shadow: inset 0px 0px 124px -5px #80888b;
+  border-radius: 25%; }
+
+.backButton:focus {
+  outline: none; }
+
+.backButton:hover {
+  background-image: url(../../assets/back-hover.svg);
+  cursor: pointer;
+  -webkit-box-shadow: inset 0px 0px 72px 1px #a8091a;
+  -moz-box-shadow: inset 0px 0px 72px 1px #a8091a;
+  box-shadow: inset 0px 0px 72px 1px #a8091a;
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1; }
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px); }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px); }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px); }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px); }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px); }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px); }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px); }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px); }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
