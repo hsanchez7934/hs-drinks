@@ -1,3 +1,4 @@
+/*eslint-disable */
 import aperolVermouth from '../assets/bottles-vermouth/aperol-vermouth.jpg';
 import dubonnetVermouth from '../assets/bottles-vermouth/dubonnet-vermouth.jpg';
 import martiniVermouth from '../assets/bottles-vermouth/martini-vermouth.jpg';

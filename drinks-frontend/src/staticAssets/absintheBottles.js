@@ -1,5 +1,5 @@
 import absente from '../assets/bottles-absinthe/absente-absinthe.jpg';
-import kubler from '../assets/bottles-absinthe/kubler-absinthe.jpg'
+import kubler from '../assets/bottles-absinthe/kubler-absinthe.jpg';
 import leopoldBros from '../assets/bottles-absinthe/leopold-bros.jpg';
 import letherBee from '../assets/bottles-absinthe/letherbee-absinthe.jpg';
 import lucid from '../assets/bottles-absinthe/lucid-absinthe.jpg';

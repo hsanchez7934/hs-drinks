@@ -1,3 +1,4 @@
+/*eslint-disable */
 import konTikiPunch from '../assets/pisco/kon-tiki-punch.jpg';
 import piscoChicha from '../assets/pisco/pisco-chicha-tonic.jpg';
 import inTheTimeOfCholera from '../assets/pisco/pisco-in-the-time-of-cholera.jpg';

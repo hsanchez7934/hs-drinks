@@ -1,3 +1,4 @@
+/*eslint-disable */
 import ansacXOCognac from '../assets/bottles-brandy/ansac-xo-cognac.jpg';
 import cardenalMendoza from '../assets/bottles-brandy/cardenal-mendoza.jpg';
 import ejBrandy from '../assets/bottles-brandy/ej-brandy.jpg';

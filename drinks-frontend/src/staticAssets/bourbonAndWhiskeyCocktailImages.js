@@ -1,3 +1,4 @@
+/*eslint-disable */
 import sour from '../assets/bourbon-and-whiskey/1870-sour-b-and-w.jpg';
 import coldComfort from '../assets/bourbon-and-whiskey/Cold-Comfort-b-and-w.jpg';
 import ginRickey from '../assets/bourbon-and-whiskey/Gin-Rickey-b-and-w.jpg';

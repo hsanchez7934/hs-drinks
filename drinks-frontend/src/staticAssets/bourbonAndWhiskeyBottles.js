@@ -1,3 +1,4 @@
+/*eslint-disable */
 import ancientAge from '../assets/bottles-bourbon-whiskey/ancient-age.jpg';
 import bakers from '../assets/bottles-bourbon-whiskey/bakers.jpg';
 import benchmark from '../assets/bottles-bourbon-whiskey/benchmark.jpg';

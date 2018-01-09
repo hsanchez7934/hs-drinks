@@ -1,3 +1,4 @@
+/*eslint-disable */
 import aperol from '../assets/bottles-aperitif-wine/aperol.jpg';
 import dubonnet from '../assets/bottles-aperitif-wine/dubonnet.jpg';
 import martini from '../assets/bottles-aperitif-wine/martini-aperitif-wine.jpg';

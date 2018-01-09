@@ -1,3 +1,4 @@
+/*eslint-disable */
 import amarettoSour from '../assets/liqueur/amaretto-sour.jpg';
 import aviation from '../assets/liqueur/aviation.jpg';
 import garibaldi from '../assets/liqueur/Garibaldi.jpg';
