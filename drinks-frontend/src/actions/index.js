@@ -140,7 +140,7 @@ export const fetchCocktails = () => dispatch => {
 };
 
 export const fetchSpirits = () => dispatch => {
-  fetch(`api/v1/spirits`)
+  fetch(`https://hs-drinks-1-5-18.herokuapp.com/api/v1/spirits`)
     .then(response => response.json())
     .then(parsedResponse => dispatch(getSpirits(parsedResponse)))
     //eslint-disable-next-line
