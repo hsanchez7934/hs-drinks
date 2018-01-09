@@ -28,6 +28,51 @@ export const getCocktail = cocktail => ({
   cocktail
 });
 
+export const addFavorite = favoriteToAdd => ({
+  type: 'ADD_FAVORITE',
+  favoriteToAdd
+});
+
+export const getFavorites = favoritesArray => ({
+  type: 'GET_FAVORITES',
+  favoritesArray
+});
+
+export const destroyFavorite = favoriteToDestroy => ({
+  type: 'DESTROY_FAVORITE',
+  favoriteToDestroy
+});
+
+export const postFavoriteToDB = (favorite) => dispatch => {
+  fetch(`api/v1/favorites`, {
+    method: 'POST',
+    accept: 'application/json',
+    body: JSON.stringify(favorite)
+  })
+    .then(response => response.json())
+    .then(parsedResponse => dispatch(addFavorite(parsedResponse)))
+    //eslint-disable-next-line
+    .catch(error => console.log(`Error has occured: ${error}`));
+};
+
+export const destroyFavoriteFromDB = (id) => dispatch => {
+  fetch(`api/v1/favorites/${id}`, {
+    method: 'DELETE'
+  })
+    .then(response => response.json())
+    .then(parsedResponse => dispatch(destroyFavorite(parsedResponse)))
+    //eslint-disable-next-line
+    .catch(error => console.log(`Error has occured: ${error}`));
+};
+
+export const fetchFavorites = () => dispatch => {
+  fetch(`api/v1/favorites`)
+    .then(response => response.json())
+    .then(parsedResponse => dispatch(getFavorites(parsedResponse)))
+    //eslint-disable-next-line
+    .catch(error => console.log(`Error has occured: ${error}`));
+};
+
 export const getCocktailsBySpirit = cocktailsBySpiritArray => ({
   type: 'GET_COCKTAILS_BY_SPIRIT',
   cocktailsBySpiritArray

@@ -60,3 +60,10 @@ export default class InformationPage extends Component {
     );
   }
 }
+
+InformationPage.propTypes = {
+  CB: PropTypes.bool,
+  BB: PropTypes.bool,
+  SB: PropTypes.bool,
+  HB: PropTypes.bool
+};

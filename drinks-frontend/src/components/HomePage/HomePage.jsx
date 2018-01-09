@@ -60,7 +60,7 @@ class HomePage extends Component {
         <section id='homepage-container'>
           <Header title={title} description={description} />
           <section id='home-container'>
-
+            
           </section>
         </section>
       );

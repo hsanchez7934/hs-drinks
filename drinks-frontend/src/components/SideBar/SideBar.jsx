@@ -19,22 +19,30 @@ export default class SideBar extends Component {
           <nav id='sidebar-nav-links-container'>
             <ul id='nav-links-box'>
               <li className='links'>
-                <p className='links-text' onClick={() => this.props.homeOnClick()}>
+                <p
+                  className='links-text'
+                  onClick={() => this.props.homeOnClick()}>
                   HOME
                 </p>
               </li>
               <li className='links'>
-                <p className='links-text' onClick={() => this.props.spiritsOnClick()}>
+                <p
+                  className='links-text'
+                  onClick={() => this.props.spiritsOnClick()}>
                   SPIRITS
                 </p>
               </li>
               <li className='links'>
-                <p className='links-text' onClick={() => this.props.cocktailsOnClick()}>
+                <p
+                  className='links-text'
+                  onClick={() => this.props.cocktailsOnClick()}>
                   COCKTAILS
                 </p>
               </li>
               <li className='links'>
-                <p className='links-text' onClick={() => this.props.bottlesOnClick()}>
+                <p
+                  className='links-text'
+                  onClick={() => this.props.bottlesOnClick()}>
                   BOTTLES
                 </p>
               </li>
@@ -50,3 +58,10 @@ export default class SideBar extends Component {
     );
   }
 }
+
+SideBar.propTypes = {
+  cocktailsOnClick: PropTypes.func,
+  bottlesOnClick: PropTypes.func,
+  spiritsOnClick: PropTypes.func,
+  homeOnClick: PropTypes.func
+};

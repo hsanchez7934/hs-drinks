@@ -10,7 +10,7 @@ const backgroundImage = (url) => ({
   backgroundRepeat: 'no-repeat'
 });
 
-
+//eslint-disable-next-line
 const SpiritCard = ({ spirit, cocktailsButtonOnClick, bottlesButtonOnClick }) => {
   const { name, description, imageURL, id } = spirit;
   return (
@@ -22,10 +22,14 @@ const SpiritCard = ({ spirit, cocktailsButtonOnClick, bottlesButtonOnClick }) =>
         <div className='spirit-buttons-container'>
           <button
             className='spirit-buttons'
-            onClick={() => cocktailsButtonOnClick(id)}>COCKTAILS</button>
+            onClick={() => cocktailsButtonOnClick(id)}>
+            COCKTAILS
+          </button>
           <button
             className='spirit-buttons'
-            onClick={() => bottlesButtonOnClick(id)}>BOTTLES</button>
+            onClick={() => bottlesButtonOnClick(id)}>
+            BOTTLES
+          </button>
         </div>
       </div>
     </article>
@@ -33,7 +37,9 @@ const SpiritCard = ({ spirit, cocktailsButtonOnClick, bottlesButtonOnClick }) =>
 };
 
 SpiritCard.propTypes = {
-  spirit: PropTypes.object
+  spirit: PropTypes.object,
+  cocktailsButtonOnClick: PropTypes.func,
+  bottlesButtonOnClick: PropTypes.func
 };
 
 export default SpiritCard;

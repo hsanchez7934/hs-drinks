@@ -54,6 +54,7 @@ export default class UserPage extends Component {
   }
 
   render() {
+    const { cocktailsBool, bottlesBool, spiritsBool, homeBool } = this.state;
     return (
       <section id='userpage-container'>
         <SideBar
@@ -62,10 +63,10 @@ export default class UserPage extends Component {
           cocktailsOnClick={this.cocktailsOnClick}
           homeOnClick={this.homeOnClick} />
         <InformationPage
-          CB={this.state.cocktailsBool}
-          BB={this.state.bottlesBool}
-          SB={this.state.spiritsBool}
-          HB={this.state.homeBool} />
+          CB={cocktailsBool}
+          BB={bottlesBool}
+          SB={spiritsBool}
+          HB={homeBool} />
       </section>
     );
   }

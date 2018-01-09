@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import absintheBottles from '../../staticAssets/absintheBottles.js';
 import aperitifBottles from '../../staticAssets/aperitifBottles.js';
 import baijiuBottles from '../../staticAssets/baijiuBottles.js';
+//eslint-disable-next-line
 import bourbonAndWhiskeyBottles from '../../staticAssets/bourbonAndWhiskeyBottles.js';
 import brandyBottles from '../../staticAssets/brandyBottles.js';
 import cachacaBottles from '../../staticAssets/cachacaBottles.js';

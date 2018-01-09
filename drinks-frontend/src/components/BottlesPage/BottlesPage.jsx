@@ -29,7 +29,6 @@ class BottlesPage extends Component {
   }
 
   render() {
-    console.log(this.props);
     const { title, description } = this.state;
     return (
       <section id='bottlespage-container'>

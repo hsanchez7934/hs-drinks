@@ -3,6 +3,7 @@ import './CocktailCard.css';
 import absintheCocktails from '../../staticAssets/absintheCocktailImages.js';
 import aperitifCocktails from '../../staticAssets/aperitifCocktailImages.js';
 import baijiuCocktails from '../../staticAssets/baijiuCocktailImages.js';
+//eslint-disable-next-line
 import bourbonAndWhiskeyCocktails from '../../staticAssets/bourbonAndWhiskeyCocktailImages.js';
 import brandyCocktails from '../../staticAssets/brandyCocktailImages.js';
 import cachacaCocktails from '../../staticAssets/cachacaCocktailImages.js';
@@ -32,8 +33,13 @@ const createIngredientsList = (array) => {
 };
 
 const CocktailCard = ({ cocktail }) => {
-  //eslint-disable-next-line
-  const { name, directions, imageURL, ingredients, id, spirit_id, spiritType } = cocktail;
+  const {
+    name,
+    directions,
+    imageURL,
+    ingredients,
+    id,
+    spiritType } = cocktail;
   return (
     <article className='cocktail-card' id={id}>
       <div className='cocktail-image' style={backgroundImage(imageURL)}></div>
