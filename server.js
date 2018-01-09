@@ -30,7 +30,7 @@ app.locals.title = 'Drinks';
 // });
 
 
-app.get('*', function(request, response) {
+app.get('/api/v1', function(request, response) {
   response.sendFile(
     path.resolve(__dirname, './drinks-frontend/build', 'index.html')
   );
