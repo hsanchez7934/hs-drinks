@@ -24,7 +24,7 @@
 
 #sidebar-app-title {
   font-size: 3em;
-  font-family: "Crimson Text", serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: lighter;
   color: #8b0000; }
 
@@ -58,13 +58,12 @@
   margin: 0 auto;
   height: 25%; }
 
-a {
+.links-text {
   font-size: 1.5em;
   color: #F7F7F5;
-  font-weight: 300;
-  text-decoration: none; }
+  font-weight: 300; }
 
-a:hover {
+.links-text:hover {
   cursor: pointer;
   font-weight: normal;
   font-size: 1.6em; }

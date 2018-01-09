@@ -7,53 +7,84 @@
   margin: 0px auto 90px;
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid #000;
+  -webkit-box-shadow: 0px 17px 41px -4px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: 0px 17px 41px -4px rgba(0, 0, 0, 0.71);
+  box-shadow: 0px 17px 41px -4px rgba(0, 0, 0, 0.71);
   font-family: "Quicksand", sans-serif; }
 
 .cocktail-image {
   height: 100%;
-  width: 30%; }
+  width: 40%; }
 
 .cocktail-info {
   height: 100%;
-  width: 70%; }
+  width: 60%;
+  background: linear-gradient(0deg, #80888B, #F7F7F5 50%, #F7F7F5); }
 
 .cocktail-name {
   text-align: center;
   width: 90%;
   margin: 0 auto;
-  height: 15%;
+  height: 10%;
   font-size: 2.2em;
   font-weight: 300;
   color: #434442;
   padding-top: 40px; }
 
+.spirit-type {
+  width: 90%;
+  margin: 0 auto;
+  height: 10%;
+  color: #8b0000;
+  text-align: center;
+  font-size: 1.3em; }
+
+.cocktail-splitter {
+  height: 55%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row; }
+
+.splitter-left {
+  width: 50%;
+  height: 100%; }
+
+.splitter-right {
+  width: 50%;
+  height: 100%;
+  border-left: 0.1px solid #80888B; }
+
 .cocktail-directions {
   text-align: center;
   width: 90%;
   margin: 0 auto;
-  height: 50%;
+  height: 90%;
   font-weight: 300;
   font-size: 1.3em;
   color: #434442;
-  padding-top: 20px; }
+  padding-top: 20px;
+  overflow: scroll; }
 
 .ingredients-container {
-  height: 25%;
-  width: 90%;
+  height: 90%;
+  width: 100%;
   padding: 0;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 20px;
+  overflow: scroll; }
 
 .ingredient {
-  text-align: center;
   width: 70%;
   margin: 0 auto;
-  list-style: none; }
+  list-style: none;
+  font-size: 1.2em; }
 
 .favorite-button-container {
   width: 90%;
-  height: 10%;
-  margin: 0 auto; }
+  height: 25%;
+  margin: 0 auto;
+  padding-top: 35px; }
 
 .favorite-button {
   display: block;
@@ -66,6 +97,14 @@
   font-weight: 300; }
 
 .favorite-button:hover {
-  background-color: #80888B;
-  color: #8b0000;
+  background-color: #44030B;
   cursor: pointer; }
+
+label {
+  display: block;
+  text-align: center;
+  font-size: 1.3em;
+  width: 90%;
+  height: 10%;
+  margin: 0 auto;
+  border-bottom: 1px solid #80888B; }

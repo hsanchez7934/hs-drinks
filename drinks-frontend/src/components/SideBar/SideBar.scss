@@ -30,7 +30,7 @@
 
 #sidebar-app-title {
   font-size: 3em;
-  font-family: $crimson;
+  font-family: $quicksand;
   font-weight: lighter;
   color: $color6;
 }
@@ -70,14 +70,13 @@
 
 }
 
-a {
+.links-text {
   font-size: 1.5em;
   color: $color4;
   font-weight: 300;
-  text-decoration: none;
 }
 
-a:hover {
+.links-text:hover {
   cursor: pointer;
   font-weight: normal;
   font-size: 1.6em;

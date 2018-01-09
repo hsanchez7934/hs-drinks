@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './SpiritCard.css';
-import spirits from '../../spiritImages.js';
+import spirits from '../../staticAssets/spiritImages.js';
 import PropTypes from 'prop-types';
 
 const backgroundImage = (url) => ({

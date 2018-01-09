@@ -8,6 +8,19 @@ export const getCocktails = cocktailsArray => ({
   cocktailsArray
 });
 
+export const getBottles = bottlesArray => ({
+  type: 'GET_BOTTLES',
+  bottlesArray
+});
+
+export const fetchBottles = () => dispatch => {
+  fetch(`api/v1/bottles`)
+    .then(response => response.json())
+    .then(parsedResponse => dispatch(getBottles(parsedResponse)))
+    //eslint-disable-next-line
+    .catch(error => console.log(`Error has occured: ${error}`));
+};
+
 
 export const fetchCocktails = () => dispatch => {
   fetch(`api/v1/cocktails`)

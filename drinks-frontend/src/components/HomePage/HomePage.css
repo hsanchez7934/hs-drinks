@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700);
+#homepage-container {
+  width: 100%;
+  height: 100%; }
+
+#home-container {
+  background-color: #F7F7F5;
+  width: 100%;
+  height: 80%;
+  overflow: scroll;
+  padding-top: 50px;
+  padding-bottom: 50px; }

@@ -5,21 +5,20 @@ import LandingPage from '../LandingPage/LandingPage.jsx';
 import UserPage from '../UserPage/UserPage.jsx';
 import { BrowserRouter, Route } from 'react-router-dom';
 
-export default class App extends Component {
-  componentDidMount() {
-    // this.props.fetchSpirits();
-  }
 
+export default class App extends Component {
   render() {
     return (
-      // <BrowserRouter>
-      //   <div className="App">
-      //     <Route exact path='/' render={ () => <LandingPage /> } />
-      //   </div>
-      // </BrowserRouter>
-      <div className='App'>
-        <UserPage />
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Route
+            exact path='/'
+            render={ () => <LandingPage /> } />
+          <Route
+            exact path='/userpage'
+            render={ () => <UserPage /> } />
+        </div>
+      </BrowserRouter>
     );
   }
 }

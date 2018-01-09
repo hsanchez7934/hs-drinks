@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700);
+.bottle-card {
+  height: 900px;
+  width: 90%;
+  background-color: #F7F7F5;
+  margin: 0px auto 90px;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-shadow: 0px 17px 41px -4px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: 0px 17px 41px -4px rgba(0, 0, 0, 0.71);
+  box-shadow: 0px 17px 41px -4px rgba(0, 0, 0, 0.71);
+  font-family: "Quicksand", sans-serif; }
+
+.bottle-image {
+  height: 100%;
+  width: 40%; }
+
+.bottle-info {
+  height: 100%;
+  width: 60%;
+  background: linear-gradient(0deg, #80888B, #F7F7F5 50%, #F7F7F5); }
+
+.bottle-name {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  height: 15%;
+  font-size: 2.2em;
+  font-weight: 300;
+  color: #434442;
+  padding-top: 40px; }
+
+.bottle-spirit-type {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  height: 10%;
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #8b0000; }
+
+.bottle-description {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  height: 85%;
+  font-weight: 300;
+  font-size: 1.3em;
+  color: #434442; }

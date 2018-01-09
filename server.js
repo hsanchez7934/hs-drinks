@@ -28,8 +28,8 @@ app.locals.title = 'Drinks';
 //   res.set('Content-Type', 'application/json');
 //   res.send('{"message":"Hello from the custom server!"}');
 // });
-//
-//
+
+
 // app.get('*', function(request, response) {
 //   response.sendFile(
 //     path.resolve(__dirname, './drinks-frontend/build', 'index.html')

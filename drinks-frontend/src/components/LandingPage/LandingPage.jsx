@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './LandingPage.css';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import drinksLogo from '../../assets/app-icons/cocktail-cup.svg';
 
 
@@ -31,7 +32,9 @@ export default class LandingPage extends Component {
               conversation.
             </p>
             <section id='get-started-button-container'>
-              <button id='get-started-button'>GET STARTED</button>
+              <Link to={'/userpage'}>
+                <button id='get-started-button'>GET STARTED</button>
+              </Link>
             </section>
           </section>
         </section>
