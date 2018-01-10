@@ -126,6 +126,7 @@ describe('API Routes', () => {
         response.body[0].should.have.property('name');
         response.body[0].should.have.property('imageURL');
         response.body[0].id.should.equal(2);
+        //eslint-disable-next-line
         response.body[0].imageURL.should.equal('/static/media/aperitif.749ad0c8.png');
       });
   });

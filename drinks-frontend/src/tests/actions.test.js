@@ -19,6 +19,7 @@ describe('Actions unit testing', () => {
 
       expect(expectation.type).toEqual('GET_COCKTAILS_BY_SPIRIT');
       expect(expectation.cocktailsBySpiritArray.length).toEqual(127);
+      //eslint-disable-next-line
       expect(expectation.cocktailsBySpiritArray[0].name).toEqual('ABSINTHE FRAPPE');
     });
 
@@ -28,6 +29,7 @@ describe('Actions unit testing', () => {
 
       expect(expectation.type).toEqual('GET_BOTTLES_BY_SPIRIT');
       expect(expectation.bottlesBySpiritArray.length).toEqual(92);
+      //eslint-disable-next-line
       expect(expectation.bottlesBySpiritArray[0].name).toEqual('LEOPOLD BROS. ABSINTHE VERTE');
     });
 
@@ -56,6 +58,7 @@ describe('Actions unit testing', () => {
 
       expect(expectation.type).toEqual('GET_BOTTLES');
       expect(expectation.bottlesArray.length).toEqual(92);
+      //eslint-disable-next-line
       expect(expectation.bottlesArray[0].name).toEqual('LEOPOLD BROS. ABSINTHE VERTE');
     });
 
@@ -76,6 +79,7 @@ describe('Actions unit testing', () => {
 
       expect(expectation.type).toEqual('GET_SPIRIT');
       expect(expectation.spirit.spirit).toEqual('ABSINTHE');
+      //eslint-disable-next-line
       expect(expectation.spirit.imageURL).toEqual('/static/media/absinthe.21748362.png');
     });
 
