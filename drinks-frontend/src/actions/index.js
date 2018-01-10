@@ -127,10 +127,7 @@ export const fetchCocktail = (id) => dispatch => {
 export const fetchBottles = () => dispatch => {
   fetch(`api/v1/bottles`)
     .then(response => response.json())
-    .then(parsedResponse => {
-      console.log(parsedResponse);
-      return dispatch(getBottles(parsedResponse))
-    })
+    .then(parsedResponse => dispatch(getBottles(parsedResponse)))
     //eslint-disable-next-line
     .catch(error => console.log(`Error has occured: ${error}`));
 };
@@ -138,10 +135,7 @@ export const fetchBottles = () => dispatch => {
 export const fetchCocktails = () => dispatch => {
   fetch(`api/v1/cocktails`)
     .then(response => response.json())
-    .then(parsedResponse => {
-      console.log(parsedResponse);
-      return dispatch(getCocktails(parsedResponse))
-    })
+    .then(parsedResponse => dispatch(getCocktails(parsedResponse)))
     //eslint-disable-next-line
     .catch(error => console.log(`Error has occured: ${error}`));
 };
@@ -149,10 +143,7 @@ export const fetchCocktails = () => dispatch => {
 export const fetchSpirits = () => dispatch => {
   fetch(`api/v1/spirits`)
     .then(response => response.json())
-    .then(parsedResponse => {
-      console.log(parsedResponse);
-      return dispatch(getSpirits(parsedResponse))
-    })
+    .then(parsedResponse => dispatch(getSpirits(parsedResponse)))
     //eslint-disable-next-line
     .catch(error => console.log(`Error has occured: ${error}`));
 };

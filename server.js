@@ -25,16 +25,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.locals.title = 'Drinks';
 
-// app.get('/api', function (req, res) {
-//   res.set('Content-Type', 'application/json');
-//   res.send('{"message":"Hello from the custom server!"}');
-// });
-
-// app.get('/api/v1', function(request, response) {
-//   response.sendFile(
-//     path.resolve(__dirname, './drinks-frontend/build', 'index.html')
-//   );
-// });
+app.get('/api/v1', function(request, response) {
+  response.sendFile(
+    path.resolve(__dirname, './drinks-frontend/build', 'index.html')
+  );
+});
 
 // GET REQUEST FOR ALL SPIRITS, COCKTAILS, AND BOTTLES - BEGIN
 app.get('/api/v1/spirits', (request, response) => {

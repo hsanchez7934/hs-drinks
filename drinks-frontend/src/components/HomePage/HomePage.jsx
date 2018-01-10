@@ -26,9 +26,9 @@ class HomePage extends Component {
   }
 
   renderHomeData = () => {
-    this.props.fetchCocktail(2875);
-    this.props.fetchBottle(1948);
-    this.props.fetchSpirit(358);
+    this.props.fetchCocktail(129);
+    this.props.fetchBottle(128);
+    this.props.fetchSpirit(19);
   }
 
   render() {
@@ -60,12 +60,11 @@ class HomePage extends Component {
         <section id='homepage-container'>
           <Header title={title} description={description} />
           <section id='home-container'>
-            
+
           </section>
         </section>
       );
     }
-
   }
 }
 
