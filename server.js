@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === 'production') {
 
 app.set('port', process.env.PORT || 3002);
 //eslint-disable-next-line
-app.use(express.static(path.resolve(__dirname, './drinks-frontend/build', 'index.html')));
+app.use(express.static(path.resolve(__dirname, './drinks-frontend/build')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.locals.title = 'Drinks';
@@ -30,7 +30,7 @@ app.locals.title = 'Drinks';
 //   res.send('{"message":"Hello from the custom server!"}');
 // });
 
-app.get('/api', function(request, response) {
+app.get('/api/v1', function(request, response) {
   response.sendFile(
     path.resolve(__dirname, './drinks-frontend/build', 'index.html')
   );
