@@ -1,9 +1,6 @@
 {
   "name": "drinks-backend",
   "version": "1.0.0",
-  "engines": {
-    "node": "6.9.4"
-  },
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -14,6 +11,10 @@
     "lint": "./node_modules/.bin/eslint ./",
     "heroku-postbuild": "cd drinks-frontend/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
+  "cacheDirectories": [
+    "node_modules",
+    "drinks-front/node_modules"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
