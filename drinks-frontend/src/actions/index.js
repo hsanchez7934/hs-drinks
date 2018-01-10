@@ -1,3 +1,13 @@
+export const getCocktailsBySpirit = cocktailsBySpiritArray => ({
+  type: 'GET_COCKTAILS_BY_SPIRIT',
+  cocktailsBySpiritArray
+});
+
+export const getBottlesBySpirit = bottlesBySpiritArray => ({
+  type: 'GET_BOTTLES_BY_SPIRIT',
+  bottlesBySpiritArray
+});
+
 export const getSpirits = spiritsArray => ({
   type: 'GET_SPIRITS',
   spiritsArray
@@ -73,15 +83,6 @@ export const fetchFavorites = () => dispatch => {
     .catch(error => console.log(`Error has occured: ${error}`));
 };
 
-export const getCocktailsBySpirit = cocktailsBySpiritArray => ({
-  type: 'GET_COCKTAILS_BY_SPIRIT',
-  cocktailsBySpiritArray
-});
-
-export const getBottlesBySpirit = bottlesBySpiritArray => ({
-  type: 'GET_BOTTLES_BY_SPIRIT',
-  bottlesBySpiritArray
-});
 
 export const fetchCocktailsBySpirit = (spiritID) => dispatch => {
   fetch(`api/v1/spirits/${spiritID}/cocktails`)

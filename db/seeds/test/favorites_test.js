@@ -11,7 +11,8 @@ const favoritesArray = [
     directions: `In a cocktail shaker add the absinthe and anisette. Fill with ice and shake well until chilled. Strain into a julep cup filled with crushed ice. Top with additional ice and garnish with the mint sprig.`,
     imageURL: '',
     spiritType: 'ABSINTHE',
-    spirit_id: 2
+    spirit_id: 2,
+    id: 1
   },
   {
     name: 'DEATH IN THE AFTERNOON',
@@ -24,7 +25,8 @@ const favoritesArray = [
     directions: `Pour the absinthe into a Champagne flute or coupe. Top with the Champagne.`,
     imageURL: '',
     spiritType: 'ABSINTHE',
-    spirit_id: 1
+    spirit_id: 1,
+    id: 2
   }
 ];
 
@@ -42,7 +44,8 @@ exports.seed = function(knex, Promise) {
           ingredients: JSON.stringify(favorite.ingredients),
           imageURL: favorite.imageURL,
           spiritType: favorite.spiritType,
-          spirit_id: favorite.spirit_id
+          spirit_id: favorite.spirit_id,
+          id: favorite.id
         }));
       return Promise.all(arrayToResolve);
     })

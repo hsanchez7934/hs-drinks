@@ -18,7 +18,8 @@ class SpiritsPage extends Component {
       in the world today. With a huge number to
       choose from, it is hard to figure out what to drink.
       Let us help you find your new favorite today.`,
-      condition: null
+      conditionCocktail: null,
+      conditionBottle: null
     };
   }
 
@@ -29,14 +30,16 @@ class SpiritsPage extends Component {
   cocktailsButtonOnClick = (id) => {
     this.props.fetchCocktailsBySpirit(id);
     this.setState({
-      condition: false
+      conditionCocktail: true,
+      conditionBottle: false
     });
   };
 
   bottlesButtonOnClick = (id) => {
     this.props.fetchBottlesBySpirit(id);
     this.setState({
-      condition: false
+      conditionCocktail: false,
+      conditionBottle: true
     });
   };
 
@@ -58,7 +61,8 @@ class SpiritsPage extends Component {
 
   backButtonOnClick = () => {
     this.setState({
-      condition: true
+      conditionCocktail: false,
+      conditionBottle: false
     });
   }
 
@@ -75,9 +79,9 @@ class SpiritsPage extends Component {
 
   render() {
     const { cocktailsBySpirit, bottlesBySpirit } = this.props;
-    const { title, description, condition } = this.state;
+    const { title, description, conditionCocktail, conditionBottle } = this.state;
 
-    if (cocktailsBySpirit.length && !condition) {
+    if (cocktailsBySpirit.length && conditionCocktail) {
       return (
         <section id='spiritspage-container'>
           <Header
@@ -96,7 +100,7 @@ class SpiritsPage extends Component {
           </section>
         </section>
       );
-    } else if (bottlesBySpirit.length && !condition) {
+    } else if (bottlesBySpirit.length && conditionBottle) {
       return (
         <section id='spiritspage-container'>
 
