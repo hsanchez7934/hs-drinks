@@ -1,4 +1,4 @@
-
+/*eslint-disable */
 exports.seed = function(knex, Promise) {
   return knex('bottles').del()
     .then(() => knex('cocktails').del())
