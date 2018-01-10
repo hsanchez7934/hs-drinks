@@ -9,7 +9,7 @@
     "server": "nodemon server.js",
     "client": "node start-client.js",
     "lint": "./node_modules/.bin/eslint ./",
-    "heroku-postbuild": "cd drinks-frontend/ && npm install && npm install && npm run build"
+    "heroku-postbuild": "cd drinks-frontend/ && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
