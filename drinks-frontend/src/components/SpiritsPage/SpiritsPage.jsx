@@ -79,6 +79,7 @@ class SpiritsPage extends Component {
 
   render() {
     const { cocktailsBySpirit, bottlesBySpirit } = this.props;
+    //eslint-disable-next-line
     const { title, description, conditionCocktail, conditionBottle } = this.state;
 
     if (cocktailsBySpirit.length && conditionCocktail) {
