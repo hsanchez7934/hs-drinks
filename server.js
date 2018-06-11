@@ -49,7 +49,18 @@ app.get('/api/v1/bottles', (request, response) => {
     .then(bottles => response.status(200).json(bottles))
     .catch(error => response.status(500).json({ error }));
 });
+
+//GET REQUEST FOR RANDOM SELECTION OF COCKTAILS, BOTTLES, AND SPRITS FOR HOMEPAGE
+app.get(`/api/v1/:database/random`, (request, response) => {
+  const table = request.params.database;
+  database(table).orderByRaw('RANDOM()').limit(1)
+    .then(cocktail => response.status(200).json(cocktail))
+    .catch(error => response.status(500).json( {error} ));
+});
 // GET REQUEST FOR ALL SPIRITS, COCKTAILS, AND BOTTLES - END
+
+
+
 
 //GET REQUEST FOR SPIRITS, COCKTAILS, AND BOTTLES BY ID - BEGIN
 app.get('/api/v1/cocktails/:id', (request, response) => {

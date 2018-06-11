@@ -17,45 +17,56 @@ class HomePage extends Component {
                     our extensive library and let
                     us help you make your favorite drink today.
                     Check out our featured bottle, spirit, and cocktail of
-                    the day below.`
+                    the day below.`,
+      randomCocktail: null,
+      randomBottle: null,
+      randomSpirit: null
     };
   }
 
   componentDidMount() {
-    this.renderHomeData();
+    this.fetchRandomItem('cocktails', 'randomCocktail');
+    this.fetchRandomItem('spirits', 'randomSpirit');
+    this.fetchRandomItem('bottles', 'randomBottle');
   }
 
-  renderHomeData = () => {
-    this.props.fetchCocktail(129);
-    this.props.fetchBottle(128);
-    this.props.fetchSpirit(19);
+  fetchRandomItem = (table, query) => {
+    fetch(`/api/v1/${table}/random`)
+      .then(response => response.json())
+      .then(parsedResponse => {
+        console.log(parsedResponse);
+        this.setState({
+          [query]: parsedResponse[0]
+        });
+      })
+      .catch(error => console.log('shits on fire yo'));
   }
 
   render() {
     const { cocktail, bottle, spirit } = this.props;
-    const { title, description } = this.state;
+    const { title, description, randomCocktail, randomSpirit, randomBottle } = this.state;
 
-    if (cocktail.id || bottle.id || spirit.id) {
+    if (randomCocktail && randomBottle && randomSpirit) {
       return (
         <section id='homepage-container'>
           <Header title={title} description={description} />
           <section id='home-container'>
             <article className='featured-card'>
               <h2 className='featured-text'>FEATURED BOTTLE OF THE DAY</h2>
-              <BottleCard bottle={this.props.bottle} />
+              <BottleCard bottle={randomBottle} />
             </article>
             <article className='featured-card'>
               <h2 className='featured-text'>FEATURED SPIRIT OF THE DAY</h2>
-              <SpiritCard spirit={this.props.spirit} />
+              <SpiritCard spirit={randomSpirit} />
             </article>
             <article className='featured-card'>
               <h2 className='featured-text'>FEATURED COCKTAIL OF THE DAY</h2>
-              <CocktailCard cocktail={this.props.cocktail} />
+              <CocktailCard cocktail={randomCocktail} />
             </article>
           </section>
         </section>
       );
-    } else {
+    } else  {
       return (
         <section id='homepage-container'>
           <Header title={title} description={description} />
