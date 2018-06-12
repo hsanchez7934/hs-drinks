@@ -54,7 +54,7 @@ app.get('/api/v1/bottles', (request, response) => {
 app.get(`/api/v1/:database/random`, (request, response) => {
   const table = request.params.database;
   database(table).orderByRaw('RANDOM()').limit(1)
-    .then(cocktail => response.status(200).json(cocktail))
+    .then(item => response.status(200).json(item))
     .catch(error => response.status(500).json( {error} ));
 });
 // GET REQUEST FOR ALL SPIRITS, COCKTAILS, AND BOTTLES - END

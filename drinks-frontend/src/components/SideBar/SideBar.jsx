@@ -2,11 +2,51 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import drinksLogo from '../../assets/app-icons/cocktail-cup.svg';
 import './SideBar.css';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import HomePage from '../HomePage/HomePage';
+import BottlesPage from '../BottlesPage/BottlesPage';
+import CocktailsPage from '../CocktailsPage/CocktailsPage';
+import SpiritsPage from '../SpiritsPage/SpiritsPage';
+import FavoritesPage from '../FavoritesPage/FavoritesPage';
 
-export default class SideBar extends Component {
+const routes = [
+  {
+    path: '/',
+    main: () => <HomePage />,
+    exact: true
+  },
+  {
+    path: '/spirits',
+    main: () => <SpiritsPage />
+  },
+  {
+    path: '/cocktails',
+    main: () => <CocktailsPage />
+  },
+  {
+    path: '/bottles',
+    main: () => <BottlesPage />
+  },
+  {
+    path: '/favorites',
+    main: () => <FavoritesPage />
+  }
+];
 
-  render () {
-    return (
+const displayRoutes = () => (
+  routes.map((route, index) =>
+    <Route
+      key={index}
+      path={route.path}
+      component={route.main}
+      exact={route.exact} />
+  )
+);
+
+const SideBar = () => (
+  <Router>
+    <section id='display-container'>
+
       <aside id='sidebar'>
         <section id='sidebar-top-section'>
           <h1 id='sidebar-app-title'>
@@ -19,45 +59,54 @@ export default class SideBar extends Component {
           <nav id='sidebar-nav-links-container'>
             <ul id='nav-links-box'>
               <li className='links'>
-                <p
+                <Link
                   className='links-text'
-                  onClick={() => this.props.homeOnClick()}>
+                  to='/'>
                   HOME
-                </p>
+                </Link>
               </li>
               <li className='links'>
-                <p
+                <Link
                   className='links-text'
-                  onClick={() => this.props.spiritsOnClick()}>
+                  to='/spirits'>
                   SPIRITS
-                </p>
+                </Link>
               </li>
               <li className='links'>
-                <p
+                <Link
                   className='links-text'
-                  onClick={() => this.props.cocktailsOnClick()}>
+                  to='/cocktails'>
                   COCKTAILS
-                </p>
+                </Link>
               </li>
               <li className='links'>
-                <p
+                <Link
                   className='links-text'
-                  onClick={() => this.props.bottlesOnClick()}>
+                  to='/bottles'>
                   BOTTLES
-                </p>
+                </Link>
               </li>
               <li className='links'>
-                <p className='links-text'>
+                <Link
+                  className='links-text'
+                  to='/favorites'>
                   FAVORITES
-                </p>
+                </Link>
               </li>
             </ul>
           </nav>
         </section>
       </aside>
-    );
-  }
-}
+
+      <div id='main-display'>
+        {
+          displayRoutes()
+        }
+      </div>
+    </section>
+  </Router>
+);
+
 
 SideBar.propTypes = {
   cocktailsOnClick: PropTypes.func,
@@ -65,3 +114,5 @@ SideBar.propTypes = {
   spiritsOnClick: PropTypes.func,
   homeOnClick: PropTypes.func
 };
+
+export default SideBar;

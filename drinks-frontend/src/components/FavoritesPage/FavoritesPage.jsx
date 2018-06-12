@@ -56,9 +56,9 @@ const mapStateToProps = store => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchFavorites: () => dispatch(fetchFavorites()),
-  fetchBottlesBySpirit: (id) => dispatch(fetchBottlesBySpirit(id)),
-  fetchCocktailsBySpirit: (id) => dispatch(fetchCocktailsBySpirit(id))
+  fetchFavorites: () => dispatch(fetchFavorites())
+  // fetchBottlesBySpirit: (id) => dispatch(fetchBottlesBySpirit(id)),
+  // fetchCocktailsBySpirit: (id) => dispatch(fetchCocktailsBySpirit(id))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SpiritsPage);

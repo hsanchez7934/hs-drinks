@@ -34,7 +34,6 @@ class HomePage extends Component {
     fetch(`/api/v1/${table}/random`)
       .then(response => response.json())
       .then(parsedResponse => {
-        console.log(parsedResponse);
         this.setState({
           [query]: parsedResponse[0]
         });
@@ -52,15 +51,15 @@ class HomePage extends Component {
           <Header title={title} description={description} />
           <section id='home-container'>
             <article className='featured-card'>
-              <h2 className='featured-text'>FEATURED BOTTLE OF THE DAY</h2>
+              <h2 className='featured-text'>FEATURED BOTTLE</h2>
               <BottleCard bottle={randomBottle} />
             </article>
             <article className='featured-card'>
-              <h2 className='featured-text'>FEATURED SPIRIT OF THE DAY</h2>
+              <h2 className='featured-text'>FEATURED SPIRIT</h2>
               <SpiritCard spirit={randomSpirit} />
             </article>
             <article className='featured-card'>
-              <h2 className='featured-text'>FEATURED COCKTAIL OF THE DAY</h2>
+              <h2 className='featured-text'>FEATURED COCKTAIL</h2>
               <CocktailCard cocktail={randomCocktail} />
             </article>
           </section>

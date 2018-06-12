@@ -53,12 +53,6 @@ export const destroyFavorite = favoriteToDestroy => ({
   favoriteToDestroy
 });
 
-// export const fetchRandomItemFromDB = (table) => dispatch => {
-//   fetch(`api/v1/${table}/random`)
-//     .then(response => response.json())
-//     .then(parsedResponse => )
-// };
-
 export const postFavoriteToDB = (favorite) => dispatch => {
   fetch(`api/v1/favorites`, {
     method: 'POST',
